@@ -497,3 +497,45 @@ footer {
   font-size: 0.9rem;
   border-top: 3px solid var(--accent);
 }
+
+
+/* ===== 新增：数学主页背景样式 ===== */
+
+/* 整个网页：浅米白底色，加很淡的方格 */
+body {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(40, 65, 85, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      rgba(40, 65, 85, 0.035) 1px,
+      transparent 1px
+    ),
+    #f7f6f2;
+
+  background-size: 32px 32px;
+}
+
+/* 顶部姓名与导航区域：深蓝到蓝绿色渐变 */
+header {
+  background: linear-gradient(
+    120deg,
+    #182b42 0%,
+    #254b62 60%,
+    #35635f 100%
+  );
+
+  color: #ffffff;
+  padding: 30px 20px 24px;
+  border-bottom: 3px solid #b99a65;
+}
+
+/* 正文：白色底，避免背景纹理干扰阅读 */
+main {
+  background: #ffffff;
+  border: 1px solid #e4e1da;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(25, 40, 55, 0.05);
+}
